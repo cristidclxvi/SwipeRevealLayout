@@ -2,7 +2,7 @@ package com.chauthai.swipereveallayoutdemo;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +13,13 @@ import android.widget.Toast;
 import com.chauthai.swipereveallayout.SwipeRevealLayout;
 import com.chauthai.swipereveallayout.ViewBinderHelper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Chau Thai on 4/8/16.
  */
 public class RecyclerAdapter extends RecyclerView.Adapter {
-    private List<String> mDataSet = new ArrayList<>();
+    private List<String> mDataSet;
     private LayoutInflater mInflater;
     private Context mContext;
     private final ViewBinderHelper binderHelper = new ViewBinderHelper();
